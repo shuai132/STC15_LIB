@@ -1,0 +1,9 @@
+"..\Output\STC15xx_delay.obj",
+"..\Output\STC15xx_GPIO.obj",
+"..\Output\STC15xx_USART1.obj",
+"..\Output\main.obj",
+"..\Output\stc15xx_it.obj",
+"..\Output\UART.obj",
+"..\Output\GPIO.obj" 
+TO "..\Output\STC15" 
+PRINT("..\Output\STC15.m51") RAMSIZE(256) 

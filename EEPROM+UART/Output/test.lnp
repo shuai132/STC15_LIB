@@ -1,0 +1,7 @@
+".\Output\delay.obj",
+".\Output\GPIO.obj",
+".\Output\USART1.obj",
+".\Output\main.obj",
+".\Output\stc15xx_it.obj" 
+TO ".\Output\test" 
+PRINT(".\Lib\inc\test.m51") RAMSIZE(256) 

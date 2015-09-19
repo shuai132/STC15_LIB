@@ -1,0 +1,1 @@
+"..\MyDriver\GPIO.c" OPTIMIZE (7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\inc;..\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\GPIO.lst) TABS (2) OBJECT(.\list\GPIO.obj)

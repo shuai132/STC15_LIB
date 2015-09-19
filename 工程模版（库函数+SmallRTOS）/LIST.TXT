@@ -1,0 +1,88 @@
+              Small RTOS(51)文件列表
+
+根目录:
+list.txt                        ：本文件
+README.TXT                      ：一些说明
+license.txt                     ：许可协议
+manual.txt                      ：用户手册
+faq.txt                         ：网友的一些问题及解答
+
+.\ex1:
+这是第1个例子的目录
+README.TXT                      ：本例子的一些说明
+ext1.c                          ：本例子的程序文件
+OS_CFG.H                        ：本例子的Small RTOS(51)配置文件
+config.h                        ：本例子的配置文件
+OS_CPU.H                        ：本例子的与cpu相关的配置文件
+test.Uv2                        ：keil c51工程文件
+test.plg                        ：keil c51工程附属文件
+test.Opt                        ：keil c51工程附属文件
+
+.\ex2:
+这是第2个例子的目录
+README.TXT                      ：本例子的一些说明              
+ext2.c                          ：本例子的程序文件              
+OS_CFG.H                        ：本例子的Small RTOS(51)配置文件
+config.h                        ：本例子的配置文件              
+OS_CPU.H                        ：本例子的与cpu相关的配置文件
+display.c                       ：对仿真dll的一些操作函数          
+display.h                       ：display.c的头文件          
+test.Uv2                        ：keil c51工程文件              
+test.Opt                        ：keil c51工程附属文件
+test.plg                        ：keil c51工程附属文件
+
+.\ex3:
+这是第3个例子的目录
+README.TXT                      ：本例子的一些说明                
+ext3.c                          ：本例子的程序文件                
+OS_CFG.H                        ：本例子的Small RTOS(51)配置文件  
+config.h                        ：本例子的配置文件                
+OS_CPU.H                        ：本例子的与cpu相关的配置文件
+display.c                       ：对仿真dll的一些操作函数         
+display.h                       ：display.c的头文件               
+test.Uv2                        ：keil c51工程文件                
+test.Opt                        ：keil c51工程附属文件            
+test.plg                        ：keil c51工程附属文件                    
+
+.\keilc51
+这是与CPU(8051系列)相关的移植代码
+OS_CPU_C.C                      ：移植代码C语言部分
+OS_CPU_A.ASM                    ：移植代码汇编语言部分
+
+.\os
+这是Small RTOS(51)与CPU无关部分
+OS_CORE.C                       ：Small RTOS(51)核心
+OS.H                            ：Small RTOS(51)头文件
+OS_q.c                          ：Small RTOS(51)消息队列代码
+OS_q.h                          ：Small RTOS(51)消息队列头文件
+OS_SEM.c                        ：Small RTOS(51)信号量代码
+OS_SEM.h                        ：Small RTOS(51)信号量头文件
+
+.\h
+这是用户使用Small RTOS(51)时的一些头文件例子
+OS_CFG.H                        ：Small RTOS(51)配置文件  
+config.h                        ：用户配置文件                
+OS_CPU.H                        ：cpu相关的配置文件
+
+.\SerialIn
+这是消息队列的例子所在目录
+README.TXT                      ：本例子的一些说明                
+Serial.c                        ：本例子的程序文件                
+OS_CFG.H                        ：本例子的Small RTOS(51)配置文件  
+config.h                        ：本例子的配置文件                
+OS_CPU.H                        ：本例子的与cpu相关的配置文件
+Test.ini                        ；本例子的调试文件
+test.Uv2                        ：keil c51工程文件                
+test.Opt                        ：keil c51工程附属文件            
+test.plg                        ：keil c51工程附属文件    
+
+.\SerialOut
+这是信号量的例子所在目录
+README.TXT                      ：本例子的一些说明                
+Serial.c                        ：本例子的程序文件                
+OS_CFG.H                        ：本例子的Small RTOS(51)配置文件  
+config.h                        ：本例子的配置文件                
+OS_CPU.H                        ：本例子的与cpu相关的配置文件
+test.Uv2                        ：keil c51工程文件                
+test.Opt                        ：keil c51工程附属文件            
+test.plg                        ：keil c51工程附属文件    

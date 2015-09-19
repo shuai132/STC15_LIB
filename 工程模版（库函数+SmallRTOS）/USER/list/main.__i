@@ -1,0 +1,1 @@
+"main.c" OPTIMIZE (7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\inc;..\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\main.lst) TABS (2) OBJECT(.\list\main.obj)

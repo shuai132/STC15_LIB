@@ -1,0 +1,45 @@
+C51 COMPILER V9.02   UART                                                                  07/27/2015 13:42:45 PAGE 1   
+
+
+C51 COMPILER V9.02, COMPILATION OF MODULE UART
+OBJECT MODULE PLACED IN ..\Output\UART.obj
+COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE ..\MyDriver\UART.c BROWSE INCDIR(..\Lib\inc;..\Lib\src;..\USER;..\MyDriv
+                    -er) DEBUG OBJECTEXTEND PRINT(..\Output\UART.lst) TABS(2) OBJECT(..\Output\UART.obj)
+
+line level    source
+
+   1          #include "UART.h"
+   2          /*************  串口1初始化函数 *****************/
+   3          void  UART1_config(void)
+   4          {
+   5   1        COMx_InitDefine   COMx_InitStructure;         //结构定义
+   6   1        COMx_InitStructure.UART_Mode      = UART_8bit_BRTx;   //模式,       UART_ShiftRight,UART_8bit_BRTx,UART_9b
+             -it,UART_9bit_BRTx
+   7   1        COMx_InitStructure.UART_BRT_Use   = BRT_Timer2;     //使用波特率,   BRT_Timer1, BRT_Timer2 (注意: 串口2固定
+             -使用BRT_Timer2)
+   8   1        COMx_InitStructure.UART_BaudRate  = 115200ul;     //波特率, 一般 110 ~ 115200
+   9   1        COMx_InitStructure.UART_RxEnable  = ENABLE;       //接收允许,   ENABLE或DISABLE
+  10   1        COMx_InitStructure.BaudRateDouble = DISABLE;      //波特率加倍, ENABLE或DISABLE
+  11   1        COMx_InitStructure.UART_Interrupt = ENABLE;       //中断允许,   ENABLE或DISABLE
+  12   1        COMx_InitStructure.UART_Polity    = PolityLow;      //中断优先级, PolityLow,PolityHigh
+  13   1        COMx_InitStructure.UART_P_SW      = UART1_SW_P30_P31; //切换端口,   UART1_SW_P30_P31,UART1_SW_P36_P37,UAR
+             -T1_SW_P16_P17(必须使用内部时钟)
+  14   1        COMx_InitStructure.UART_RXD_TXD_Short = DISABLE;    //内部短路RXD与TXD, 做中继, ENABLE,DISABLE
+  15   1        USART_Configuration(USART1, &COMx_InitStructure);   //初始化串口1 USART1,USART2
+  16   1        
+  17   1        //PrintString1("STC15F2K60S2 UART1 Test Prgramme!\r\n");  //SUART1发送一个字符串
+  18   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     43    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      13
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

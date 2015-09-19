@@ -1,0 +1,1 @@
+"..\Lib\src\STC15xx_USART1.C" OPTIMIZE (7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\inc;..\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\STC15xx_USART1.lst) TABS (2) OBJECT(.\list\STC15xx_USART1.obj)

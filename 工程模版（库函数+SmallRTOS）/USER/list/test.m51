@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        07/27/2015  14:24:09  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        09/20/2015  15:17:57  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -59,7 +59,7 @@ LINK MAP OF MODULE:  .\list\test (OS_CORE)
             CODE    0023H     0003H     ABSOLUTE     
             CODE    0026H     01C4H     UNIT         ?PR?_GPIO_INILIZE?STC15XX_GPIO
             CODE    01EAH     019FH     UNIT         ?PR?_USART_CONFIGURATION?STC15XX_USART1
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 2
 
 
             CODE    0389H     019EH     UNIT         ?C?LIB_CODE
@@ -119,7 +119,7 @@ SEGMENT                                           DATA_GROUP
 ?PR?OSCTXSW?OS_CPU_A                            -----    -----
   +--> ?CO?OS_CORE
   +--> ?PR?C_OSCTXSW?OS_CPU_C
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 3
 
 
 
@@ -179,7 +179,7 @@ SEGMENT                                           DATA_GROUP
 
 ?PR?TASKB?MAIN                                  -----    -----
   +--> ?PR?_OSWAIT?OS_CORE
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 4
 
 
   +--> ?CO?MAIN
@@ -239,7 +239,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   C:0999H         LINE#         174
   C:099EH         LINE#         175
   C:099EH         LINE#         176
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 5
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 5
 
 
   -------         ENDPROC       _OSINTSENDSIGNAL
@@ -299,7 +299,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   C:08F0H         LINE#         371
   C:08F0H         LINE#         374
   C:08F4H         LINE#         376
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 6
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 6
 
 
   C:08F8H         LINE#         377
@@ -359,7 +359,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   C:0708H         LINE#         518
   C:070DH         LINE#         519
   C:0710H         LINE#         520
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 7
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 7
 
 
   C:0710H         LINE#         522
@@ -419,7 +419,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   D:00E0H         PUBLIC        ACC
   D:00D0H         PUBLIC        PSW
   -------         ENDMOD        OS_SEM
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 8
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 8
 
 
 
@@ -479,7 +479,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   C:099FH         LINE#         31
   C:099FH         LINE#         32
   C:099FH         LINE#         33
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 9
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 9
 
 
   C:099FH         LINE#         34
@@ -539,7 +539,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   D:0004H         SYMBOL        i
   -------         ENDDO         
   C:05B5H         LINE#         201
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 10
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 10
 
 
   C:05B5H         LINE#         203
@@ -599,7 +599,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   D:00F0H         SYMBOL        B
   C:0527H         SYMBOL        C_OSCTXSW
   D:0083H         SYMBOL        DPH
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 11
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 11
 
 
   D:0082H         SYMBOL        DPL
@@ -659,7 +659,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   C:053CH         LINE#         257
   C:053EH         LINE#         258
   C:053FH         LINE#         259
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 12
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 12
 
 
   C:0541H         LINE#         260
@@ -719,7 +719,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   C:058CH         LINE#         351
   C:058DH         LINE#         353
   C:058EH         LINE#         354
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 13
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 13
 
 
   C:058FH         LINE#         356
@@ -779,7 +779,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   D:0091H         PUBLIC        P1M1
   D:0080H         PUBLIC        P0
   D:00B2H         PUBLIC        P3M0
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 14
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 14
 
 
   D:0095H         PUBLIC        P2M1
@@ -839,7 +839,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   C:0144H         LINE#         49
   C:0157H         LINE#         50
   C:0157H         LINE#         51
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 15
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 15
 
 
   C:015CH         LINE#         52
@@ -899,7 +899,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   C:01EAH         PUBLIC        _USART_Configuration
   B:0088H.6       PUBLIC        TR1
   D:0097H         PUBLIC        PCON2
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 16
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 16
 
 
   B:0098H.4       PUBLIC        REN
@@ -959,7 +959,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   C:02FCH         LINE#         70
   C:02FFH         LINE#         71
   C:0302H         LINE#         72
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 17
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 17
 
 
   C:0305H         LINE#         73
@@ -1019,7 +1019,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   C:076EH         LINE#         130
   C:0771H         LINE#         131
   C:0771H         LINE#         132
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 18
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 18
 
 
   C:0771H         LINE#         134
@@ -1079,7 +1079,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   D:0090H         PUBLIC        P1
   D:00A0H         PUBLIC        P2
   D:00B0H         PUBLIC        P3
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 19
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 19
 
 
   D:00C0H         PUBLIC        P4
@@ -1139,7 +1139,7 @@ SYMBOL TABLE OF MODULE:  .\list\test (OS_CORE)
   -------         MODULE        ?C?LLDXDATA0
   C:04FEH         PUBLIC        ?C?LLDXDATA0
   -------         ENDMOD        ?C?LLDXDATA0
-BL51 BANKED LINKER/LOCATER V6.22                                                      07/27/2015  14:24:09  PAGE 20
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/20/2015  15:17:57  PAGE 20
 
 
 

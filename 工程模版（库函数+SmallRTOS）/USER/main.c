@@ -5,45 +5,45 @@
 #include "UART.h"
 #include "GPIO.h"
 
-                            void main(void)
+void main(void)
 {
-	TMOD = (TMOD & 0XF0) | 0X01;
-	TL0 = 0x0;
-	TH0 = 0x0;
-	TR0 = 1;
-	ET0 = 1;
-	GPIO_config();
-	UART1_config();
-	PrintString1("Hello! World\r\n");
+    TMOD = (TMOD & 0XF0) | 0X01;
+    TL0 = 0x0;
+    TH0 = 0x0;
+    TR0 = 1;
+    ET0 = 1;
+    GPIO_config();
+    UART1_config();
+    PrintString1("Hello! World\r\n");
     OSStart();
 }
 
-                            void TaskA(void)
+void TaskA(void)
 {
     while (1)
     {
-			led0=~led0;
+        led0=~led0;
         OSWait(K_TMO,5);
-			PrintString1("TaskA\r\n");
+        PrintString1("TaskA\r\n");
     } 
 }
 
-                            void TaskB(void)
+void TaskB(void)
 {
     while (1)
     {
-			led1=~led1;
+        led1=~led1;
         OSWait(K_TMO,10);
-			PrintString1("TaskB\r\n");
+        PrintString1("TaskB\r\n");
     }
 }
 
-                            void TaskC(void)
+void TaskC(void)
 {
     while (1)
     {
-			led2=~led2;
+        led2=~led2;
         OSWait(K_TMO,15);
-			PrintString1("TaskC\r\n");
+        PrintString1("TaskC\r\n");
     }
 }

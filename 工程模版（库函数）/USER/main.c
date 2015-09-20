@@ -11,19 +11,17 @@
 //***********************************led**************************************************
 sbit	led=P3^0;
 
-
-void main(){
-	
-	GPIO_config();
-	UART1_config();
-	EA = 1;
-	
-	for(;;){
-		PrintString1("test....\r\n");
-		led=~led;
-		delay_ms(500);
-		
-	}
-	
-	
+void main()
+{
+    
+    GPIO_config();
+    UART1_config();
+    EA = 1;
+    
+    for(;;)
+    {
+        PrintString1("test....\r\n");
+        led=~led;
+        delay_ms(500);
+    }	
 }

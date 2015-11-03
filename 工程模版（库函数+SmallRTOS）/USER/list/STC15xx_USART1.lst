@@ -1,10 +1,11 @@
-C51 COMPILER V9.02   STC15XX_USART1                                                        09/20/2015 15:17:56 PAGE 1   
+C51 COMPILER V9.02   STC15XX_USART1                                                        11/03/2015 18:34:31 PAGE 1   
 
 
 C51 COMPILER V9.02, COMPILATION OF MODULE STC15XX_USART1
 OBJECT MODULE PLACED IN .\list\STC15xx_USART1.obj
-COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE ..\Lib\src\STC15xx_USART1.C OPTIMIZE(7,SPEED) BROWSE INCDIR(..\MyDriver;
-                    -..\Lib\inc;..\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\STC15xx_USART1.lst) TABS(2) OBJECT(.\list\STC15xx_USART1.obj)
+COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE ..\Lib\src\STC15xx_USART1.C LARGE OPTIMIZE(7,SPEED) BROWSE INCDIR(..\MyD
+                    -river;..\Lib\inc;..\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\STC15xx_USART1.lst) TABS(2) OBJECT(.\list\STC15xx_USART1.ob
+                    -j)
 
 line level    source
 
@@ -61,9 +62,9 @@ line level    source
   51   4              AUXR &= ~0x01;    //S1 BRT Use Timer1;
   52   4              TMOD &= ~(1<<6);  //Timer1 set As Timer
   53   4              TMOD &= ~0x30;    //Timer1_16bitAutoReload;
-  54   4              AUXR |=  (1<<6);  //Timer1 set as 1T mode
-C51 COMPILER V9.02   STC15XX_USART1                                                        09/20/2015 15:17:56 PAGE 2   
+C51 COMPILER V9.02   STC15XX_USART1                                                        11/03/2015 18:34:31 PAGE 2   
 
+  54   4              AUXR |=  (1<<6);  //Timer1 set as 1T mode
   55   4              TH1 = (u8)(j>>8);
   56   4              TL1 = (u8)j;
   57   4              ET1 = 0;  //½ûÖ¹ÖÐ¶Ï
@@ -125,9 +126,9 @@ line level    source
  113          void PrintString1(u8 *puts)
  114          {
  115   1          for (; *puts != 0;  puts++)  TX1_write2buff(*puts);   //Óöµ½Í£Ö¹·û0½áÊø
- 116   1      }
-C51 COMPILER V9.02   STC15XX_USART1                                                        09/20/2015 15:17:56 PAGE 3   
+C51 COMPILER V9.02   STC15XX_USART1                                                        11/03/2015 18:34:31 PAGE 3   
 
+ 116   1      }
  117          
  118          
  119          
@@ -163,11 +164,11 @@ line level    source
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    551    ----
+   CODE SIZE        =    651    ----
    CONSTANT SIZE    =   ----    ----
-   XDATA SIZE       =   ----    ----
+   XDATA SIZE       =      7       7
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =      7       7
+   DATA SIZE        =   ----    ----
    IDATA SIZE       =     80    ----
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.

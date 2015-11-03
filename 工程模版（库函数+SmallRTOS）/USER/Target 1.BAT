@@ -1,0 +1,19 @@
+SET C51INC=d:\Keil_v5\C51\Inc
+SET C51LIB=d:\Keil_v5\C51\Lib
+SET CPU_TYPE=8052AH
+SET CPU_VENDOR=Intel
+SET UV2_TARGET=Target 1
+SET CPU_XTAL=0x00B71B00
+"d:\Keil_v5\C51\BIN\C51.EXE" @.\list\Os_core.__i
+"d:\Keil_v5\C51\BIN\C51.EXE" @.\list\Os_q.__i
+"d:\Keil_v5\C51\BIN\C51.EXE" @.\list\Os_sem.__i
+"d:\Keil_v5\C51\BIN\C51.EXE" @.\list\main.__i
+"d:\Keil_v5\C51\BIN\C51.EXE" @.\list\STC15X~4.__I
+"d:\Keil_v5\C51\BIN\C51.EXE" @.\list\Os_cpu_c.__i
+"d:\Keil_v5\C51\BIN\A51.EXE" @.\list\Os_cpu_a._ia
+"d:\Keil_v5\C51\BIN\C51.EXE" @.\list\STC15X~2.__I
+"d:\Keil_v5\C51\BIN\C51.EXE" @.\list\STC15X~3.__I
+"d:\Keil_v5\C51\BIN\C51.EXE" @.\list\UART.__i
+"d:\Keil_v5\C51\BIN\C51.EXE" @.\list\GPIO.__i
+"d:\Keil_v5\C51\BIN\BL51.EXE" @.\list\test.lnp
+"d:\Keil_v5\C51\BIN\OH51.EXE" ".\list\test" 

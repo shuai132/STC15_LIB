@@ -1,19 +1,19 @@
-C51 COMPILER V9.02   MAIN                                                                  09/20/2015 15:17:56 PAGE 1   
+C51 COMPILER V9.02   MAIN                                                                  11/03/2015 18:34:30 PAGE 1   
 
 
 C51 COMPILER V9.02, COMPILATION OF MODULE MAIN
 OBJECT MODULE PLACED IN .\list\main.obj
-COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE main.c OPTIMIZE(7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\inc;..\Lib\src
-                    -) DEBUG OBJECTEXTEND PRINT(.\list\main.lst) TABS(2) OBJECT(.\list\main.obj)
+COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE main.c LARGE OPTIMIZE(7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\inc;..\L
+                    -ib\src) DEBUG OBJECTEXTEND PRINT(.\list\main.lst) TABS(2) OBJECT(.\list\main.obj)
 
 line level    source
 
    1          #include "STC15xx_config.h"
    2          #include "config.h"
-   3          #include "led.h"
-   4          
-   5          #include "UART.h"
-   6          #include "GPIO.h"
+   3          
+   4          #include "UART.h"
+   5          #include "GPIO.h"
+   6          #include "led.h"
    7          
    8          void main(void)
    9          {
@@ -62,7 +62,7 @@ line level    source
 MODULE INFORMATION:   STATIC OVERLAYABLE
    CODE SIZE        =     99    ----
    CONSTANT SIZE    =     39    ----
-C51 COMPILER V9.02   MAIN                                                                  09/20/2015 15:17:56 PAGE 2   
+C51 COMPILER V9.02   MAIN                                                                  11/03/2015 18:34:30 PAGE 2   
 
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----

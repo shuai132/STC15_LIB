@@ -380,9 +380,9 @@
           <GroupName>user</GroupName>
           <Files>
             <File>
-              <FileName>ext1.c</FileName>
+              <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\ext1.c</FilePath>
+              <FilePath>.\main.c</FilePath>
             </File>
           </Files>
         </Group>

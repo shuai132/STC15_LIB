@@ -1,10 +1,10 @@
-C51 COMPILER V9.02   OS_CPU_C                                                              07/27/2015 14:08:48 PAGE 1   
+C51 COMPILER V9.02   OS_CPU_C                                                              11/03/2015 18:27:55 PAGE 1   
 
 
 C51 COMPILER V9.02, COMPILATION OF MODULE OS_CPU_C
 OBJECT MODULE PLACED IN .\list\Os_cpu_c.obj
-COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE ..\keilc51\Os_cpu_c.c OPTIMIZE(7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib
-                    -\inc;..\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\Os_cpu_c.lst) TABS(2) OBJECT(.\list\Os_cpu_c.obj)
+COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE ..\keilc51\Os_cpu_c.c LARGE OPTIMIZE(7,SPEED) BROWSE INCDIR(..\MyDriver;
+                    -..\Lib\inc;..\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\Os_cpu_c.lst) TABS(2) OBJECT(.\list\Os_cpu_c.obj)
 
 line level    source
 
@@ -62,7 +62,7 @@ line level    source
   52          **
   53          **------------------------------------------------------------------------------------------------------
   54          ** 修改人: 陈明计
-C51 COMPILER V9.02   OS_CPU_C                                                              07/27/2015 14:08:48 PAGE 2   
+C51 COMPILER V9.02   OS_CPU_C                                                              11/03/2015 18:27:55 PAGE 2   
 
   55          ** 版  本: V1.11.0
   56          ** 日　期: 2002年12月2日
@@ -126,7 +126,7 @@ line level    source
  107          {
  108              uint8 idata *cp1,idata *cp2;
  109              uint8 i,temp;
-C51 COMPILER V9.02   OS_CPU_C                                                              07/27/2015 14:08:48 PAGE 3   
+C51 COMPILER V9.02   OS_CPU_C                                                              11/03/2015 18:27:55 PAGE 3   
 
  110              
  111              cp1 = (uint8 idata *)SP +1;
@@ -190,7 +190,7 @@ line level    source
  169          **-------------------------------------------------------------------------------------------------------
  170          ********************************************************************************************************/
  171          
-C51 COMPILER V9.02   OS_CPU_C                                                              07/27/2015 14:08:48 PAGE 4   
+C51 COMPILER V9.02   OS_CPU_C                                                              11/03/2015 18:27:55 PAGE 4   
 
  172                  void OSIdle(void)
  173          {
@@ -254,7 +254,7 @@ line level    source
  231   2          }
  232   1          /* 允许中断 */
  233   1          Os_Enter_Sum = 1;
-C51 COMPILER V9.02   OS_CPU_C                                                              07/27/2015 14:08:48 PAGE 5   
+C51 COMPILER V9.02   OS_CPU_C                                                              11/03/2015 18:27:55 PAGE 5   
 
  234   1          OS_EXIT_CRITICAL();
  235   1          /* 函数返回优先级最高的任务 */
@@ -318,13 +318,13 @@ line level    source
  288   1          
  289   1          OSIntExit();                                        /* 中断结束处理                                   
              -          */
-C51 COMPILER V9.02   OS_CPU_C                                                              07/27/2015 14:08:48 PAGE 6   
+C51 COMPILER V9.02   OS_CPU_C                                                              11/03/2015 18:27:55 PAGE 6   
 
  290   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    216    ----
+   CODE SIZE        =    220    ----
    CONSTANT SIZE    =      9    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----

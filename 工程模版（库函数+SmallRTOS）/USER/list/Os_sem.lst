@@ -1,10 +1,10 @@
-C51 COMPILER V9.02   OS_SEM                                                                07/27/2015 14:08:48 PAGE 1   
+C51 COMPILER V9.02   OS_SEM                                                                11/03/2015 18:27:55 PAGE 1   
 
 
 C51 COMPILER V9.02, COMPILATION OF MODULE OS_SEM
 OBJECT MODULE PLACED IN .\list\Os_sem.obj
-COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE ..\OS\Os_sem.c OPTIMIZE(7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\inc;..
-                    -\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\Os_sem.lst) TABS(2) OBJECT(.\list\Os_sem.obj)
+COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE ..\OS\Os_sem.c LARGE OPTIMIZE(7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\
+                    -inc;..\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\Os_sem.lst) TABS(2) OBJECT(.\list\Os_sem.obj)
 
 line level    source
 
@@ -62,7 +62,7 @@ line level    source
   52          #include "config.h"
 *** WARNING C322 IN LINE 530 OF ..\LIB\INC\STC15FXXXX.H: unknown identifier
 *** WARNING C322 IN LINE 532 OF ..\LIB\INC\STC15FXXXX.H: unknown identifier
-C51 COMPILER V9.02   OS_SEM                                                                07/27/2015 14:08:48 PAGE 2   
+C51 COMPILER V9.02   OS_SEM                                                                11/03/2015 18:27:55 PAGE 2   
 
 *** WARNING C322 IN LINE 534 OF ..\LIB\INC\STC15FXXXX.H: unknown identifier
 *** WARNING C322 IN LINE 536 OF ..\LIB\INC\STC15FXXXX.H: unknown identifier
@@ -126,7 +126,7 @@ line level    source
               **         Tick:等待时间
               ** 输　出: NOT_OK:参数错误
               **         OS_SEM_OK:得到信号量
-C51 COMPILER V9.02   OS_SEM                                                                07/27/2015 14:08:48 PAGE 3   
+C51 COMPILER V9.02   OS_SEM                                                                11/03/2015 18:27:55 PAGE 3   
 
               **         OS_SEM_TMO:超时到
               **         OS_SEM_NOT_OK:没有得到信号量
@@ -190,7 +190,7 @@ line level    source
               #endif
                               /* 使用堆栈是为了使函数具有重入性 */
               #ifdef __C51__
-C51 COMPILER V9.02   OS_SEM                                                                07/27/2015 14:08:48 PAGE 4   
+C51 COMPILER V9.02   OS_SEM                                                                11/03/2015 18:27:55 PAGE 4   
 
                       SP++;
                       *((uint8 data *)SP) = Index;
@@ -254,7 +254,7 @@ line level    source
               **         OS_SEM_TMO:超时到
               **         OS_SEM_NOT_OK:没有得到信号量
               ** 全局变量: 无
-C51 COMPILER V9.02   OS_SEM                                                                07/27/2015 14:08:48 PAGE 5   
+C51 COMPILER V9.02   OS_SEM                                                                11/03/2015 18:27:55 PAGE 5   
 
               ** 调用模块: OSClearSignal,OSSched,OS_ENTER_CRITICAL,OS_EXIT_CRITICAL
               **
@@ -318,7 +318,7 @@ line level    source
               ** 日　期: 2002年9月1日
               **-------------------------------------------------------------------------------------------------------
               ** 修改人: 陈明计
-C51 COMPILER V9.02   OS_SEM                                                                07/27/2015 14:08:48 PAGE 6   
+C51 COMPILER V9.02   OS_SEM                                                                11/03/2015 18:27:55 PAGE 6   
 
               ** 日　期: 2002年10月26日
               **-------------------------------------------------------------------------------------------------------
@@ -382,7 +382,7 @@ line level    source
                       temp = temp >> 1;
                   }
                   if (i >= 8)
-C51 COMPILER V9.02   OS_SEM                                                                07/27/2015 14:08:48 PAGE 7   
+C51 COMPILER V9.02   OS_SEM                                                                11/03/2015 18:27:55 PAGE 7   
 
                   {
                       temp = OsSemBuf[Index * 3 + 2];
@@ -446,7 +446,7 @@ line level    source
               #endif
               
               /*********************************************************************************************************
-C51 COMPILER V9.02   OS_SEM                                                                07/27/2015 14:08:48 PAGE 8   
+C51 COMPILER V9.02   OS_SEM                                                                11/03/2015 18:27:55 PAGE 8   
 
               ** 函数名称: OSSemQuery
               ** 功能描述: 查询信号量

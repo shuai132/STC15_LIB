@@ -1,10 +1,10 @@
-C51 COMPILER V9.02   OS_Q                                                                  07/27/2015 14:08:48 PAGE 1   
+C51 COMPILER V9.02   OS_Q                                                                  11/03/2015 18:27:55 PAGE 1   
 
 
 C51 COMPILER V9.02, COMPILATION OF MODULE OS_Q
 OBJECT MODULE PLACED IN .\list\Os_q.obj
-COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE ..\OS\Os_q.c OPTIMIZE(7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\inc;..\L
-                    -ib\src) DEBUG OBJECTEXTEND PRINT(.\list\Os_q.lst) TABS(2) OBJECT(.\list\Os_q.obj)
+COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE ..\OS\Os_q.c LARGE OPTIMIZE(7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\in
+                    -c;..\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\Os_q.lst) TABS(2) OBJECT(.\list\Os_q.obj)
 
 line level    source
 
@@ -62,7 +62,7 @@ line level    source
   52          **
   53          **------------------------------------------------------------------------------------------------------
   54          ********************************************************************************************************/
-C51 COMPILER V9.02   OS_Q                                                                  07/27/2015 14:08:48 PAGE 2   
+C51 COMPILER V9.02   OS_Q                                                                  11/03/2015 18:27:55 PAGE 2   
 
   55          
   56          #define  IN_OS_Q
@@ -126,7 +126,7 @@ line level    source
               
               }
               
-C51 COMPILER V9.02   OS_Q                                                                  07/27/2015 14:08:48 PAGE 3   
+C51 COMPILER V9.02   OS_Q                                                                  11/03/2015 18:27:55 PAGE 3   
 
               /*********************************************************************************************************
               ** 函数名称: OSQPend
@@ -190,7 +190,7 @@ line level    source
                   }
                   else
                   {
-C51 COMPILER V9.02   OS_Q                                                                  07/27/2015 14:08:48 PAGE 4   
+C51 COMPILER V9.02   OS_Q                                                                  11/03/2015 18:27:55 PAGE 4   
 
                       Buf[4] |= OSMapTbl[OSRunningTaskID() & 0x07];
                   }
@@ -254,7 +254,7 @@ line level    source
                       *Ret = Buf[Buf[2]];
               #endif
                       OS_EXIT_CRITICAL();
-C51 COMPILER V9.02   OS_Q                                                                  07/27/2015 14:08:48 PAGE 5   
+C51 COMPILER V9.02   OS_Q                                                                  11/03/2015 18:27:55 PAGE 5   
 
                       return OS_Q_OK;
                   }
@@ -318,7 +318,7 @@ line level    source
                       }
                       *Ret = Buf[Buf[2]];
                       OS_EXIT_CRITICAL();
-C51 COMPILER V9.02   OS_Q                                                                  07/27/2015 14:08:48 PAGE 6   
+C51 COMPILER V9.02   OS_Q                                                                  11/03/2015 18:27:55 PAGE 6   
 
                       return OS_Q_OK;
                   }
@@ -382,7 +382,7 @@ line level    source
                       *((uint8 data *)SP) = Data;
               #endif
                               /* 计算新入队消息存储位置 */
-C51 COMPILER V9.02   OS_Q                                                                  07/27/2015 14:08:48 PAGE 7   
+C51 COMPILER V9.02   OS_Q                                                                  11/03/2015 18:27:55 PAGE 7   
 
                       temp = Buf[2] + Buf[0] + 1;
                       if (temp <= Buf[0] || temp >= Buf[1])
@@ -446,7 +446,7 @@ line level    source
                           if (i < OS_MAX_TASKS )
                           {
                               /* 查到，使其中优先级最高的任务进入就绪状态，并将其从等待队列中清除 */
-C51 COMPILER V9.02   OS_Q                                                                  07/27/2015 14:08:48 PAGE 8   
+C51 COMPILER V9.02   OS_Q                                                                  11/03/2015 18:27:55 PAGE 8   
 
                               if (i < 8)
                               {
@@ -510,7 +510,7 @@ line level    source
               #endif
                   {
                               /* 存储消息 */
-C51 COMPILER V9.02   OS_Q                                                                  07/27/2015 14:08:48 PAGE 9   
+C51 COMPILER V9.02   OS_Q                                                                  11/03/2015 18:27:55 PAGE 9   
 
                       Buf[Buf[2]] = Data;
                       Buf[0]++;           /* 消息数目增加一 */
@@ -574,7 +574,7 @@ line level    source
                                   Buf[3] &= ~OSMapTbl[i];
                               }
                               else
-C51 COMPILER V9.02   OS_Q                                                                  07/27/2015 14:08:48 PAGE 10  
+C51 COMPILER V9.02   OS_Q                                                                  11/03/2015 18:27:55 PAGE 10  
 
                               {
                                   Buf[4] &= ~OSMapTbl[i & 0x07];
@@ -638,7 +638,7 @@ line level    source
               ** 功能描述: LIFO方式发送消息
               ** 输　入: Buf:指向队列的指针
               **         Data:消息数据
-C51 COMPILER V9.02   OS_Q                                                                  07/27/2015 14:08:48 PAGE 11  
+C51 COMPILER V9.02   OS_Q                                                                  11/03/2015 18:27:55 PAGE 11  
 
               ** 输　出: OS_Q_FULL:队列满
               **         OS_Q_OK:发送成功
@@ -702,7 +702,7 @@ line level    source
               #endif
               
                   OS_ENTER_CRITICAL();
-C51 COMPILER V9.02   OS_Q                                                                  07/27/2015 14:08:48 PAGE 12  
+C51 COMPILER V9.02   OS_Q                                                                  11/03/2015 18:27:55 PAGE 12  
 
                   temp = Buf[0];
                   OS_EXIT_CRITICAL();
@@ -766,7 +766,7 @@ line level    source
               ** 日　期:
               **-------------------------------------------------------------------------------------------------------
               ********************************************************************************************************/
-C51 COMPILER V9.02   OS_Q                                                                  07/27/2015 14:08:48 PAGE 13  
+C51 COMPILER V9.02   OS_Q                                                                  11/03/2015 18:27:55 PAGE 13  
 
               #if EN_OS_Q_FLUSH > 0
                       void OSQFlush (uint8 OS_Q_MEM_SEL *Buf)

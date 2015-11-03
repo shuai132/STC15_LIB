@@ -2,6 +2,7 @@
 ".\list\Os_q.obj",
 ".\list\Os_sem.obj",
 ".\list\main.obj",
+".\list\stc15xx_it.obj",
 ".\list\Os_cpu_c.obj",
 ".\list\Os_cpu_a.obj",
 ".\list\STC15xx_GPIO.obj",

@@ -1,9 +1,9 @@
-A51 MACRO ASSEMBLER  OS_CPU_A                                                             07/17/2015 00:08:39 PAGE     1
+A51 MACRO ASSEMBLER  OS_CPU_A                                                             11/03/2015 18:27:55 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.02
 OBJECT MODULE PLACED IN .\list\Os_cpu_a.obj
-ASSEMBLER INVOKED BY: d:\Keil_v5\C51\BIN\A51.EXE ..\keilc51\Os_cpu_a.asm SET(SMALL) DEBUG PRINT(.\list\Os_cpu_a.lst) OBJ
+ASSEMBLER INVOKED BY: d:\Keil_v5\C51\BIN\A51.EXE ..\keilc51\Os_cpu_a.asm SET(LARGE) DEBUG PRINT(.\list\Os_cpu_a.lst) OBJ
                       ECT(.\list\Os_cpu_a.obj) EP
 
 LOC  OBJ            LINE     SOURCE
@@ -65,7 +65,7 @@ LOC  OBJ            LINE     SOURCE
                              --------------
                       48     ;** ÐÞ¸ÄÈË: ³ÂÃ÷¼Æ
                       49     ;** °æ  ±¾: V1.12.0
-A51 MACRO ASSEMBLER  OS_CPU_A                                                             07/17/2015 00:08:39 PAGE     2
+A51 MACRO ASSEMBLER  OS_CPU_A                                                             11/03/2015 18:27:55 PAGE     2
 
                       50     ;** ÈÕ¡¡ÆÚ: 2002Äê12ÔÂ30ÈÕ
                       51     ;** Ãè¡¡Êö: ¸ù¾ÝÐÂ°æ±¾ÒªÇó¸ü¸ÄÉÙÁ¿´úÂë
@@ -133,7 +133,7 @@ LOC  OBJ            LINE     SOURCE
                 +1   109     
                 +1   110     
                 +1   111     
-A51 MACRO ASSEMBLER  OS_CPU_A                                                             07/17/2015 00:08:39 PAGE     3
+A51 MACRO ASSEMBLER  OS_CPU_A                                                             11/03/2015 18:27:55 PAGE     3
 
                 +1   112     
                 +1   113     
@@ -201,7 +201,7 @@ LOC  OBJ            LINE     SOURCE
                 +1   175     
                 +1   176     
                 +1   177     
-A51 MACRO ASSEMBLER  OS_CPU_A                                                             07/17/2015 00:08:39 PAGE     4
+A51 MACRO ASSEMBLER  OS_CPU_A                                                             11/03/2015 18:27:55 PAGE     4
 
                 +1   178     
                 +1   179     
@@ -269,7 +269,7 @@ LOC  OBJ            LINE     SOURCE
                 +1   241     
                 +1   242     
                 +1   243     
-A51 MACRO ASSEMBLER  OS_CPU_A                                                             07/17/2015 00:08:39 PAGE     5
+A51 MACRO ASSEMBLER  OS_CPU_A                                                             11/03/2015 18:27:55 PAGE     5
 
                 +1   244                                                 
                 +1   245     
@@ -337,7 +337,7 @@ LOC  OBJ            LINE     SOURCE
                      307     
                      308     ?STACK          SEGMENT   IDATA
                      309     
-A51 MACRO ASSEMBLER  OS_CPU_A                                                             07/17/2015 00:08:39 PAGE     6
+A51 MACRO ASSEMBLER  OS_CPU_A                                                             11/03/2015 18:27:55 PAGE     6
 
 ----                 310                     RSEG    ?STACK
 0000                 311     STACK:                                          ;¶ÑÕ»
@@ -405,7 +405,7 @@ LOC  OBJ            LINE     SOURCE
 0017 D004            367         POP     4
 0019 D003            368         POP     3
 001B D002            369         POP     2
-A51 MACRO ASSEMBLER  OS_CPU_A                                                             07/17/2015 00:08:39 PAGE     7
+A51 MACRO ASSEMBLER  OS_CPU_A                                                             11/03/2015 18:27:55 PAGE     7
 
 001D D001            370         POP     1
 001F D000            371         POP     0
@@ -473,7 +473,7 @@ LOC  OBJ            LINE     SOURCE
                      429     ;** º¯ÊÃû³Æ: C_OSCtxSw
                      430     ;** ¹¦ÄÜÃèÊö: ¶ÑÕ»´¦Àíº¯Ê
                      431     ;** Êä¡¡Èë: ÎÞ
-A51 MACRO ASSEMBLER  OS_CPU_A                                                             07/17/2015 00:08:39 PAGE     8
+A51 MACRO ASSEMBLER  OS_CPU_A                                                             11/03/2015 18:27:55 PAGE     8
 
                      432     ;** Êä¡¡³ö : ÎÞ
                      433     ;** È«¾Ö±äÁ¿: OSTaskID,OSTsakStackBotton,SP
@@ -541,7 +541,7 @@ LOC  OBJ            LINE     SOURCE
 0026                 491     ?C0003:
                      492     ;         temp = OSTsakStackBotton[OSTaskID+1] - (unsigned char idata *)SP-1;
 0026 7400     F      493         MOV     A,#LOW (OSTsakStackBotton+1)
-A51 MACRO ASSEMBLER  OS_CPU_A                                                             07/17/2015 00:08:39 PAGE     9
+A51 MACRO ASSEMBLER  OS_CPU_A                                                             11/03/2015 18:27:55 PAGE     9
 
 0028 2500     F      494         ADD     A,OSTaskID
 002A F9              495         MOV     R1,A
@@ -609,7 +609,7 @@ LOC  OBJ            LINE     SOURCE
 005B E6              557         MOV     A,@R0
 005C F7              558         MOV     @R1,A
 005D DEFA            559         DJNZ    R6,?C0008
-A51 MACRO ASSEMBLER  OS_CPU_A                                                             07/17/2015 00:08:39 PAGE    10
+A51 MACRO ASSEMBLER  OS_CPU_A                                                             11/03/2015 18:27:55 PAGE    10
 
 005F                 560     ?C0009:
                      561     ;         temp = OSTsakStackBotton[OSTaskID+1] - (unsigned char idata *)SP-1;
@@ -677,7 +677,7 @@ LOC  OBJ            LINE     SOURCE
                      622     ;**----------------------------------------------------------------------------------------
                              ---------------
                      623     ;** ÐÞ¡¡¸Ä: ³ÂÃ÷¼Æ
-A51 MACRO ASSEMBLER  OS_CPU_A                                                             07/17/2015 00:08:39 PAGE    11
+A51 MACRO ASSEMBLER  OS_CPU_A                                                             11/03/2015 18:27:55 PAGE    11
 
                      624     ;** ÈÕ¡¡ÆÚ: 2002Äê12ÔÂ2ÈÕ
                      625     ;**----------------------------------------------------------------------------------------
@@ -745,10 +745,10 @@ LOC  OBJ            LINE     SOURCE
 002E 32              684         RETI
                      685     
                      686     ;****************************************************************************************
-A51 MACRO ASSEMBLER  OS_CPU_A                                                             07/17/2015 00:08:39 PAGE    12
+A51 MACRO ASSEMBLER  OS_CPU_A                                                             11/03/2015 18:27:55 PAGE    12
 
                      687             END
-A51 MACRO ASSEMBLER  OS_CPU_A                                                             07/17/2015 00:08:39 PAGE    13
+A51 MACRO ASSEMBLER  OS_CPU_A                                                             11/03/2015 18:27:55 PAGE    13
 
 SYMBOL TABLE LISTING
 ------ ----- -------

@@ -1,0 +1,1 @@
+"..\keilc51\Os_cpu_a.asm" SET (LARGE) DEBUG PRINT(.\list\Os_cpu_a.lst) OBJECT(.\list\Os_cpu_a.obj) EP

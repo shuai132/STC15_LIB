@@ -1,1 +1,0 @@
-"main.c" BROWSE INCDIR(..\Lib\inc;..\Lib\src;..\USER;..\MyDriver) DEBUG OBJECTEXTEND PRINT(..\Output\main.lst) TABS (2) OBJECT(..\Output\main.obj)

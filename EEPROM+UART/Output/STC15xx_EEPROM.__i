@@ -1,1 +1,0 @@
-"..\Lib\src\STC15xx_EEPROM.c" BROWSE INCDIR(..\Lib\inc;..\Lib\src;..\USER;..\MyDriver) DEBUG OBJECTEXTEND PRINT(..\Output\STC15xx_EEPROM.lst) TABS (2) OBJECT(..\Output\STC15xx_EEPROM.obj)

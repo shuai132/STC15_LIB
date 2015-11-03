@@ -1,1 +1,0 @@
-"..\MyDriver\UART.c" BROWSE INCDIR(..\Lib\inc;..\Lib\src;..\USER;..\MyDriver) DEBUG OBJECTEXTEND PRINT(..\Output\UART.lst) TABS (2) OBJECT(..\Output\UART.obj)

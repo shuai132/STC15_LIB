@@ -1,10 +1,10 @@
-C51 COMPILER V9.02   OS_CORE                                                               07/27/2015 14:08:48 PAGE 1   
+C51 COMPILER V9.02   OS_CORE                                                               11/03/2015 18:27:55 PAGE 1   
 
 
 C51 COMPILER V9.02, COMPILATION OF MODULE OS_CORE
 OBJECT MODULE PLACED IN .\list\Os_core.obj
-COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE ..\os\Os_core.c OPTIMIZE(7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\inc;.
-                    -.\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\Os_core.lst) TABS(2) OBJECT(.\list\Os_core.obj)
+COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE ..\os\Os_core.c LARGE OPTIMIZE(7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib
+                    -\inc;..\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\Os_core.lst) TABS(2) OBJECT(.\list\Os_core.obj)
 
 line level    source
 
@@ -62,7 +62,7 @@ line level    source
   52          **
   53          **------------------------------------------------------------------------------------------------------
   54          ** 修改人: 陈明计
-C51 COMPILER V9.02   OS_CORE                                                               07/27/2015 14:08:48 PAGE 2   
+C51 COMPILER V9.02   OS_CORE                                                               11/03/2015 18:27:55 PAGE 2   
 
   55          ** 日　期: 2002年9月4日
   56          ** 版  本: V1.10.1
@@ -126,7 +126,7 @@ line level    source
 *** WARNING C322 IN LINE 542 OF ..\LIB\INC\STC15FXXXX.H: unknown identifier
  108          
  109          #if EN_OS_INT_ENTER > 0
-C51 COMPILER V9.02   OS_CORE                                                               07/27/2015 14:08:48 PAGE 3   
+C51 COMPILER V9.02   OS_CORE                                                               11/03/2015 18:27:55 PAGE 3   
 
  110          uint8 OSIntNesting;
  111          #endif
@@ -190,7 +190,7 @@ line level    source
                       else
                       {
                           ((uint8 *)(&OSTaskRuning))[HIGH_BYTE] |= OSMapTbl[TaskId & 0x07];
-C51 COMPILER V9.02   OS_CORE                                                               07/27/2015 14:08:48 PAGE 4   
+C51 COMPILER V9.02   OS_CORE                                                               11/03/2015 18:27:55 PAGE 4   
 
                       }
               #endif
@@ -254,7 +254,7 @@ line level    source
  231   1          {
  232   2              OS_ENTER_CRITICAL();
  233   2      #if OS_MAX_TASKS < 9
-C51 COMPILER V9.02   OS_CORE                                                               07/27/2015 14:08:48 PAGE 5   
+C51 COMPILER V9.02   OS_CORE                                                               11/03/2015 18:27:55 PAGE 5   
 
  234   2              OSTaskRuning &= ~OSMapTbl[TaskId];
  235   2      #else
@@ -318,7 +318,7 @@ line level    source
  293   2      #endif
  294   2              
  295   2              Os_Enter_Sum = 0;               /* 因为在中断中，所以关中断计数器为0 */
-C51 COMPILER V9.02   OS_CORE                                                               07/27/2015 14:08:48 PAGE 6   
+C51 COMPILER V9.02   OS_CORE                                                               11/03/2015 18:27:55 PAGE 6   
 
  296   2      #if OS_MAX_TASKS < 9
  297   2                      /* 查找处于就绪状态的任务中优先级最高的任务 */
@@ -382,7 +382,7 @@ line level    source
  355          **------------------------------------------------------------------------------------------------------
  356          ** 修改人: 陈明计
  357          ** 日　期: 2002年10月19日
-C51 COMPILER V9.02   OS_CORE                                                               07/27/2015 14:08:48 PAGE 7   
+C51 COMPILER V9.02   OS_CORE                                                               11/03/2015 18:27:55 PAGE 7   
 
  358          **------------------------------------------------------------------------------------------------------
  359          ** 修改人: 陈明计
@@ -446,7 +446,7 @@ line level    source
  417   2      #if EN_OS_INT_ENTER > 0
  418   2          }
  419   1      #endif
-C51 COMPILER V9.02   OS_CORE                                                               07/27/2015 14:08:48 PAGE 8   
+C51 COMPILER V9.02   OS_CORE                                                               11/03/2015 18:27:55 PAGE 8   
 
  420   1          OS_EXIT_CRITICAL();
  421   1      }
@@ -510,7 +510,7 @@ line level    source
  479          **-------------------------------------------------------------------------------------------------------
  480          ** 修改人: 陈明计
  481          ** 日　期: 2002年9月1日
-C51 COMPILER V9.02   OS_CORE                                                               07/27/2015 14:08:48 PAGE 9   
+C51 COMPILER V9.02   OS_CORE                                                               11/03/2015 18:27:55 PAGE 9   
 
  482          **-------------------------------------------------------------------------------------------------------
  483          ** 修改人: 陈明计
@@ -574,13 +574,13 @@ line level    source
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-C51 COMPILER V9.02   OS_CORE                                                               07/27/2015 14:08:48 PAGE 10  
+C51 COMPILER V9.02   OS_CORE                                                               11/03/2015 18:27:55 PAGE 10  
 
-   CODE SIZE        =    285    ----
+   CODE SIZE        =    391    ----
    CONSTANT SIZE    =      9    ----
-   XDATA SIZE       =   ----    ----
+   XDATA SIZE       =      5    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =      8    ----
+   DATA SIZE        =      3    ----
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.

@@ -1,1 +1,0 @@
-"stc15xx_it.c" LARGE OPTIMIZE (7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\inc;..\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\stc15xx_it.lst) TABS (2) OBJECT(.\list\stc15xx_it.obj)

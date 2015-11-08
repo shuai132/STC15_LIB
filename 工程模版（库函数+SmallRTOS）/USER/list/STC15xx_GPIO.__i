@@ -1,1 +1,0 @@
-"..\Lib\src\STC15xx_GPIO.c" LARGE OPTIMIZE (7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\inc;..\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\STC15xx_GPIO.lst) TABS (2) OBJECT(.\list\STC15xx_GPIO.obj)

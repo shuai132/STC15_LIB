@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "UART.h"
 #include "STC15xx_config.h"
 
@@ -17,4 +18,10 @@ void	UART1_config(void)
 	USART_Configuration(USART1, &COMx_InitStructure);		//初始化串口1 USART1,USART2
 	
 	//PrintString1("STC15F2K60S2 UART1 Test Prgramme!\r\n");	//SUART1发送一个字符串
+}
+
+char putchar(char dat)
+{
+	TX1_write2buff(dat);
+	return dat;
 }

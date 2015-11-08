@@ -1,1 +1,0 @@
-"..\Lib\src\STC15xx_delay.c" OPTIMIZE (7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\src;..\Lib\inc) DEBUG OBJECTEXTEND PRINT(.\list\STC15xx_delay.lst) TABS (2) OBJECT(.\list\STC15xx_delay.obj)

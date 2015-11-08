@@ -1,1 +1,0 @@
-"..\keilc51\Os_cpu_c.c" LARGE OPTIMIZE (7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\inc;..\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\Os_cpu_c.lst) TABS (2) OBJECT(.\list\Os_cpu_c.obj)

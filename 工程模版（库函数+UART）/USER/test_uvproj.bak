@@ -307,7 +307,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\Lib\inc;..\Lib\src;..\USER</IncludePath>
+              <IncludePath>..\Lib\inc;..\Lib\src;..\USER;..\MyDriver</IncludePath>
             </VariousControls>
           </C51>
           <Ax51>
@@ -360,19 +360,19 @@
           <GroupName>Lib</GroupName>
           <Files>
             <File>
-              <FileName>delay.c</FileName>
+              <FileName>STC15xx_delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Lib\src\delay.c</FilePath>
+              <FilePath>..\Lib\src\STC15xx_delay.c</FilePath>
             </File>
             <File>
-              <FileName>USART1.C</FileName>
+              <FileName>STC15xx_GPIO.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Lib\src\USART1.C</FilePath>
+              <FilePath>..\Lib\src\STC15xx_GPIO.c</FilePath>
             </File>
             <File>
-              <FileName>GPIO.c</FileName>
+              <FileName>STC15xx_USART1.C</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Lib\src\GPIO.c</FilePath>
+              <FilePath>..\Lib\src\STC15xx_USART1.C</FilePath>
             </File>
           </Files>
         </Group>
@@ -388,6 +388,21 @@
               <FileName>stc15xx_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\stc15xx_it.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>MyDriver</GroupName>
+          <Files>
+            <File>
+              <FileName>UART.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MyDriver\UART.c</FilePath>
+            </File>
+            <File>
+              <FileName>GPIO.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MyDriver\GPIO.c</FilePath>
             </File>
           </Files>
         </Group>

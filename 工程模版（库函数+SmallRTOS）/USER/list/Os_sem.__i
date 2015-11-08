@@ -1,1 +1,0 @@
-"..\OS\Os_sem.c" LARGE OPTIMIZE (7,SPEED) BROWSE INCDIR(..\MyDriver;..\Lib\inc;..\Lib\src) DEBUG OBJECTEXTEND PRINT(.\list\Os_sem.lst) TABS (2) OBJECT(.\list\Os_sem.obj)

@@ -1,6 +1,7 @@
+
+#include <stdio.h>
 #include "STC15xx_config.h"
 #include "config.h"
-
 #include "UART.h"
 #include "GPIO.h"
 #include "led.h"
@@ -14,7 +15,8 @@ void main(void)
     ET0 = 1;
     GPIO_config();
     UART1_config();
-    PrintString1("Hello! World\r\n");
+		EA = 1;
+    printf("Hello! World\r\n");
     OSStart();
 }
 
@@ -24,7 +26,7 @@ void TaskA(void)
     {
         led0=~led0;
         OSWait(K_TMO,5);
-        PrintString1("TaskA\r\n");
+        printf("TaskA\r\n");
     } 
 }
 
@@ -34,7 +36,7 @@ void TaskB(void)
     {
         led1=~led1;
         OSWait(K_TMO,10);
-        PrintString1("TaskB\r\n");
+        printf("TaskB\r\n");
     }
 }
 
@@ -44,6 +46,6 @@ void TaskC(void)
     {
         led2=~led2;
         OSWait(K_TMO,15);
-        PrintString1("TaskC\r\n");
+        printf("TaskC\r\n");
     }
 }

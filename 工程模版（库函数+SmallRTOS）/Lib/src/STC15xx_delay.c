@@ -28,9 +28,9 @@
 // 返回: none.
 // 版本: VER1.0
 // 日期: 2013-4-1
-// 备注: 
+// 备注: 更改为delay_ms(unsigned int ms) 也许误差会大一些，但方便使用
 //========================================================================
-void  delay_ms(unsigned char ms)
+void  delay_ms(unsigned int ms)
 {
      unsigned int i;
 	 do{

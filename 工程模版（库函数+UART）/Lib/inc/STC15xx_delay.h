@@ -4,6 +4,6 @@
 
 #include	"STC15xx_config.h"
 
-void  delay_ms(unsigned char ms);
+void  delay_ms(unsigned int ms);
 
 #endif

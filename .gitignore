@@ -2,3 +2,4 @@
 *.uvopt
 *.uvproj
 *.bak
+.vscode/

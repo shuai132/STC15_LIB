@@ -1,4 +1,6 @@
 #include "GPIO.h"
+#include "STC15xx_config.h"
+
 /************************ IOø⁄≈‰÷√ ****************************/
 void GPIO_config(void)
 {

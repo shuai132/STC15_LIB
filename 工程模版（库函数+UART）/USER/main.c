@@ -9,15 +9,15 @@ void main()
 {
     int x = 123;
     
-  GPIO_config();
-  UART1_config();
-  EA = 1;
+    GPIO_config();
+    UART1_config();
+    EA = 1;
     
-  printf("test....\n");
-  for(;;)
-  {
+    printf("test....\n");
+    for(;;)
+    {
         printf("x = %d\n", x);
-    led=~led;
-    delay_ms(500);
-  }
+        led=~led;
+        delay_ms(500);
+    }
 }
